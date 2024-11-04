@@ -1,6 +1,10 @@
-@Waning_Viper_API.Api_HostAddress = http://localhost:5293
+### POST a new Item to the Catalog collection
+POST https://localhost:7250/catalog
+Content-Type: application/json
 
-GET {{Waning_Viper_API.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
+{
+    "name": "Shoes",
+    "description": "Ohio State shoes",
+    "brand": "Nike",
+    "price": 129.99
+}
