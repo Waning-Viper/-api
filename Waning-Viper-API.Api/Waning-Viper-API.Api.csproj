@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Waning-Viper-API.Domain\Waning-Viper-API.Domain.csproj" />
+    <ProjectReference Include="..\Waning-Viper-API.Data\Waning-Viper-API.Data.csproj" />
   </ItemGroup>
 
 </Project>
