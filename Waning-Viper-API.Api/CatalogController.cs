@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Waning_Viper_API.Domain.Catalog;
 using Waning_Viper_API.Data;
-using static Waning_Viper_API.Data.Class1;
 
 namespace Waning_Viper_API.Controllers
 {

@@ -430,6 +430,7 @@ test-results/
 *.sqlite
 
 
+
 # content below from: https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
 # General
 .DS_Store

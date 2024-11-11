@@ -14,17 +14,17 @@ namespace Waning_Viper_API.Domain.Catalog
     {
         if (string.IsNullOrEmpty(name))
         {
-            throw new ArgumentNullException(name);
+            throw new ArgumentNullException(nameof(name));
         }
 
         if (string.IsNullOrEmpty(description))
         {
-            throw new ArgumentNullException(description);
+            throw new ArgumentNullException(nameof(description));
         }
 
         if(string.IsNullOrEmpty(brand)) 
         {
-            throw new ArgumentNullException(brand);
+            throw new ArgumentNullException(nameof(brand));
         }
 
         if(price < 0.00m) 
@@ -51,7 +51,7 @@ namespace Waning_Viper_API.Domain.Catalog
 public class Rating 
         {
             public int Id {get; set;}
-            public int Stars { get; set; }
+            public int Star { get; set; }
             public string UserName { get; set; }
             public string Review { get; set; }
 
@@ -67,7 +67,7 @@ public class Rating
                 throw new ArgumentException("UserName cannot be null.");
             }
 
-            this.Stars = stars;
+            this.Star = stars;
             this.UserName = userName;
             this.Review = review;
 

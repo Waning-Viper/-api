@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
 
-namespace jet.piranha.Api
+namespace Waning_Viper_API.Api
 {
     public class Program
     {
