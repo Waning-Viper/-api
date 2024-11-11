@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waning-Viper-API.Api", "Wan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waning-Viper-API.Domain", "Waning-Viper-API.Domain\Waning-Viper-API.Domain.csproj", "{119D1C2D-6D6C-4831-BC83-025D0197B3D2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{530C7ECA-2B8A-40AE-AA36-149A520445B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Waning-Viper.Domain.Tests", "tests\Waning-Viper.Domain.Tests\Waning-Viper.Domain.Tests.csproj", "{E1BB77D2-8B54-4150-8D8C-0E1AD3DC30AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,12 @@ Global
 		{119D1C2D-6D6C-4831-BC83-025D0197B3D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{119D1C2D-6D6C-4831-BC83-025D0197B3D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{119D1C2D-6D6C-4831-BC83-025D0197B3D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1BB77D2-8B54-4150-8D8C-0E1AD3DC30AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1BB77D2-8B54-4150-8D8C-0E1AD3DC30AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1BB77D2-8B54-4150-8D8C-0E1AD3DC30AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1BB77D2-8B54-4150-8D8C-0E1AD3DC30AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E1BB77D2-8B54-4150-8D8C-0E1AD3DC30AB} = {530C7ECA-2B8A-40AE-AA36-149A520445B9}
 	EndGlobalSection
 EndGlobal
