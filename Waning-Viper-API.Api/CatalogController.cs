@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Waning_Viper_API.Domain.Catalog;
+using Waning_Viper_API.Data;
+using static Waning_Viper_API.Data.Class1;
 
 namespace Waning_Viper_API.Controllers
 {
@@ -7,16 +9,21 @@ namespace Waning_Viper_API.Controllers
     [Route("[controller]")]
     public class CatalogController : ControllerBase
     {
+
+        private readonly StoreContext _db;
+
+        public CatalogController(StoreContext db)
+        {
+            _db = db;
+        }
+
+
+
         [HttpGet]
         public IActionResult GetItems()
         {
-            var items = new List<Item>()
-            {
-                new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m),
-                new Item("Shorts", "Ohio State shorts.", "Nike", 44.99m)
-            };
 
-            return Ok("hello world.");
+            return Ok(_db.Items);
         }
 
         [HttpGet("{id:int}")]
